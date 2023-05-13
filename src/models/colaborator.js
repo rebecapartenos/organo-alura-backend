@@ -2,8 +2,7 @@ import mongoose from "mongoose";
 
 const colaboratorSchema = mongoose.Schema({
         id: {
-            type: String,
-            required: true,
+            type: String
         },
         name: {
             type: String,
@@ -19,7 +18,7 @@ const colaboratorSchema = mongoose.Schema({
         }
     },
     {
-        timestamps: true,
+        versionKey: false
     }
 );
 
